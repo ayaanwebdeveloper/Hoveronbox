@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.box{
+    width: 80vh;
+    height: 50vh;
+    background-color: black;
+    border-radius: 10%;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+
+}
+.n{
+    color: white;
+    translate: (180deg);
+    font-size: 50px;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: sans-serif;
+    transform: translatey(120%); 
+}
+.box:hover .n{
+    opacity: 1;
+    transform: translate(0);
+}
